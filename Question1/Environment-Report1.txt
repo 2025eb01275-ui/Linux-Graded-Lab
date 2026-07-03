@@ -1,0 +1,55 @@
+xEnvironment Verification Report
+
+Name: Pavman Gahlot
+
+1. Username abd groups
+Command: whoami
+         groups 
+Output: pavman
+        pavman adm dialout cdrom floppy sudo audio dip video plugdev users netdev
+Observation: The whoami command displayed the current username, and the groups command displayed the groups associated with the user account.
+
+2. Current Shell
+Command: echo $SHELL
+Output:/bin/bash
+Observation:The echo $SHELL command displays the current shell being used. The output confirmed that the Bash shell is being used to execute Linux commands.
+
+3. Current Working Directory
+Command: pwd
+Output:/home/pavman
+Observation:The pwd command displays the current working directory. It confirmed the location from which commands were being executed.
+
+4. Files and Directories
+Command: ls -la
+Output:total 48
+drwxr-x--- 4 pavman pavman 4096 Jul  3 13:18 .
+drwxr-xr-x 3 root   root   4096 Jul  3 12:27 ..
+-rw-r--r-- 1 pavman pavman 1024 Jul  3 13:18 .Environment-Report.txt.swp
+-rw------- 1 pavman pavman  335 Jul  3 13:19 .bash_history
+-rw-r--r-- 1 pavman pavman  220 Jul  3 12:27 .bash_logout
+-rw-r--r-- 1 pavman pavman 3771 Jul  3 12:27 .bashrc
+drwx------ 2 pavman pavman 4096 Jul  3 12:27 .cache
+drwxr-xr-x 3 pavman pavman 4096 Jul  3 12:55 .local
+-rw-rw-r-- 1 pavman pavman    0 Jul  3 12:27 .motd_shown
+-rw-r--r-- 1 pavman pavman  807 Jul  3 12:27 .profile
+-rw-r--r-- 1 pavman pavman  341 Jul  3 13:12 Environment-Report.txt
+-rw------- 1 pavman pavman 1581 Jul  3 12:57 Environment_Report.txt.save
+-rw-r--r-- 1 pavman pavman  341 Jul  3 13:13 Environmet-Report.txt
+Observation:The ls -la command lists all files and directories, including hidden files, along with detailed information such as permissions, ownership, size, and modification date.
+
+5. Network Connectivity
+Command: ping -c 4 google.com
+Output:PING google.com (142.250.182.46) 56(84) bytes of data.
+64 bytes from maa05s19-in-f14.1e100.net (142.250.182.46): icmp_seq=1 ttl=111 time=15.5 ms
+64 bytes from maa05s19-in-f14.1e100.net (142.250.182.46): icmp_seq=2 ttl=111 time=15.1 ms
+64 bytes from maa05s19-in-f14.1e100.net (142.250.182.46): icmp_seq=3 ttl=111 time=14.8 ms
+64 bytes from maa05s19-in-f14.1e100.net (142.250.182.46): icmp_seq=4 ttl=111 time=16.0 ms
+
+--- google.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3331ms
+rtt min/avg/max/mdev = 14.805/15.367/16.030/0.462 ms
+Observation:The ping -c 4 google.com command tested the internet connectivity by sending four packets to Google's server. The successful replies confirmed that the network connection was working properly.
+
+Conclusion:
+
+The Linux environment verification was completed successfully. The username, associated groups, current shell, working directory, files and directories, and network connectivity were verified using the appropriate Linux commands. All commands executed successfully, confirming that the Linux environment is functioning properly.
