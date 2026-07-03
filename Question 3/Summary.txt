@@ -1,0 +1,11 @@
+Summary of Findings
+
+The original file, hard link and symbolic link were successfully created.
+
+The original file and hard link shared the same inode number, while the symbolic link had a different inode number.
+
+After deleting the original file, the hard link continued to work because it pointed to the same inode.
+
+The symbolic link became broken because it referenced the deleted file.
+
+This experiment clearly demonstrated the difference between hard links and symbolic links in Linux.

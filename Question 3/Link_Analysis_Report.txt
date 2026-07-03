@@ -1,0 +1,27 @@
+Link Analysis Report
+
+1. Inode Numbers of All Files
+
+The inode numbers were displayed using the ls -li command.
+The original file (original.txt) and the hard link (hardlink.txt) shared the same inode number (49372).
+The symbolic link (symlink.txt) had a different inode number (49375).
+
+2. Comparison Between Hard Link and Symbolic Link
+
+A hard link points directly to the inode of the original file.
+A symbolic link stores the path to the original file.
+Hard links continue to work even if the original file is deleted, while symbolic links become broken.
+
+3. Effect of Deleting the Original File
+
+The original file was deleted using the rm command.
+The hard link remained accessible and functioned normally.
+The symbolic link became invalid because the original file no longer existed.
+
+4. Metadata Collected Using Linux Utilities
+
+The stat command was used to display metadata including inode number, owner, group, permissions, timestamps and file type.
+
+5. Conclusion
+
+The experiment demonstrated that hard links share the same inode as the original file and remain usable after deletion of the original file. Symbolic links only store the file path and become broken if the original file is removed.
