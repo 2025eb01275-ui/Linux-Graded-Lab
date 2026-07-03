@@ -1,0 +1,26 @@
+Explanation of Observations
+
+1. mkdir
+The mkdir command creates a new directory. It was used to create the Linux-Assignment and Project directories.
+
+2. cd
+The cd command changes the current working directory. It was used to move into the Linux-Assignment and Project folders.
+
+3. touch
+The touch command creates empty files. It was used to create report.txt and notes.txt.
+
+4. ls -l
+The ls -l command displays files with detailed information such as permissions, owner, group, size and modification date. It was used to verify file permissions before and after modification.
+
+5. chmod
+The chmod command changes file permissions. The permissions of report.txt and notes.txt were modified to improve security.
+
+6. stat
+The stat command displays detailed information about a file, including ownership, inode number, permissions and timestamps.
+
+7. umask
+The umask command displays the default permission mask used when creating new files and directories.
+
+Conclusion
+
+The commands successfully created a secure project workspace. File permissions, ownership and the default umask were verified, ensuring that the project files are protected from unauthorized access.
