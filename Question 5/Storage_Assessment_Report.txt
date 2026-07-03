@@ -1,0 +1,30 @@
+Storage Assessment Report
+
+1. Available Storage Devices
+The available storage devices were identified using the lsblk command.
+The system contains disk devices such as sda, sdb, sdc and sdd.
+
+2. Mounted File Systems
+Mounted file systems were checked using the mount and df -h commands.
+The system has multiple mounted file systems including /mnt/wsl and Windows drives.
+
+3. Disk Usage Statistics
+Disk usage was displayed using the df -h command.
+The storage has sufficient free space and no partition is completely full.
+
+4. Inode Utilization
+Inode usage was checked using the df -i command.
+Most file systems have very low inode usage, indicating enough inodes are available.
+
+5. Storage Health Observations
+The storage appears healthy with adequate free space and low inode utilization.
+No storage-related issues were observed.
+
+6. Recommendations for Improving Storage Utilization
+Delete unnecessary files regularly.
+Monitor disk usage frequently.
+Keep sufficient free space to maintain good system performance.
+
+Conclusion
+The storage resources were successfully analyzed using Linux commands.
+The system has healthy storage utilization and enough free space for normal operation.
